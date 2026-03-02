@@ -1,4 +1,4 @@
-package Array;
+package TopHundredDSA.Array;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -7,8 +7,8 @@ public class PairwithGivenSum {
 
     //reference https://www.geeksforgeeks.org/dsa/check-if-pair-with-given-sum-exists-in-array/
 int[] data={1, -2, 1, 0, 5};
-    public  void main() {
-        System.out.println(pairOfSumwithTwoPointers(data,0));;
+      void main() {
+        System.out.println(pairOfSumwithTwoPointers(data,0));
         System.out.println(pairOfSumwithSet(data,0));
     }
 
@@ -35,14 +35,13 @@ int[] data={1, -2, 1, 0, 5};
 
     public boolean pairOfSumwithSet(int [] array, int sum) {
         HashSet<Integer> set = new HashSet<>();
-        for (int i = 0; i < array.length; i++) {
-            int secondelement=sum-array[i];
-            if (set.contains(sum-array[i]) ) {
-                System.out.println("Found pair with sum Values are "+ array[i]+", "+secondelement );
+        for (int j : array) {
+            int secondelement = sum - j;
+            if (set.contains(sum - j)) {
+                System.out.println("Found pair with sum Values are " + j + ", " + secondelement);
                 return true;
-            }
-            else{
-                set.add(array[i]);
+            } else {
+                set.add(j);
             }
         }
 return  false;

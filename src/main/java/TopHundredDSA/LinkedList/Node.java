@@ -1,4 +1,4 @@
-package LinkedList;
+package TopHundredDSA.LinkedList;
 
 public class Node {
     public int data;

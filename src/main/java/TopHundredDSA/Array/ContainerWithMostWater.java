@@ -1,9 +1,9 @@
-package Array;
+package TopHundredDSA.Array;
 
 public class ContainerWithMostWater {
     int[] arr={8, 7, 8, 6, 4, 6, 5, 8};
      void main() {
-         System.out.println(maxArea(arr));;
+         System.out.println(maxArea(arr));
     }
 //o(n)
     public int maxArea(int[] nums) {

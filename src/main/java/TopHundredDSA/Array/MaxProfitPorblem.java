@@ -1,4 +1,4 @@
-package Array;
+package TopHundredDSA.Array;
 
 public class MaxProfitPorblem {
     int[] data= {1, 3, 6, 9, 11};
@@ -10,9 +10,9 @@ public class MaxProfitPorblem {
         int min=prices[0];
         int maxProfit=0;
 
-        for (int i = 0; i <prices.length ; i++) {
-            maxProfit=Math.max(prices[i]-min,maxProfit);
-            min=Math.min(prices[i],min);
+        for (int price : prices) {
+            maxProfit = Math.max(price - min, maxProfit);
+            min = Math.min(price, min);
         }
 
 return  maxProfit;

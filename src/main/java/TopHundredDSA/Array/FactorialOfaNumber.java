@@ -1,6 +1,6 @@
-package Array;
+package TopHundredDSA.Array;
 
-import LinkedList.Node;
+import TopHundredDSA.LinkedList.Node;
 
 import java.util.ArrayList;
 
@@ -12,6 +12,7 @@ public class FactorialOfaNumber {
          //System.out.println(res.toString());
          Node head=new Node(1);
          factorial2(5,head);
+         factorial(4);
 
     }
 
@@ -60,8 +61,5 @@ public class FactorialOfaNumber {
                 prev=prev.prev;
             }
     }
-
-
-
 
 }
