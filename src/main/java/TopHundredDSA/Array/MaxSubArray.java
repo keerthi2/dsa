@@ -1,4 +1,4 @@
-package Array;
+package TopHundredDSA.Array;
 
 public class MaxSubArray {
 
@@ -16,8 +16,8 @@ public class MaxSubArray {
     public int maxSubArray(int[] nums) {
         int maxSum = nums[0];
         int currSum = 0;
-        for (int i = 0; i < nums.length; i++) {
-            currSum += nums[i];
+        for (int num : nums) {
+            currSum += num;
             maxSum = Math.max(currSum, maxSum);
             currSum = Math.max(currSum, 0);
         }
@@ -26,13 +26,10 @@ public class MaxSubArray {
 
     public int maxSubArrayBruteForce(int[] nums) {
         int maxSum = nums[0];
-        int currSum = 0;
+        int currSum;
         for (int i = 0; i < nums.length; i++) {
             currSum = nums[i];
-            for (int j = i + 1; j < nums.length; j++) {
-                currSum += nums[j];
-                ;
-            }
+            for (int j = i + 1; j < nums.length; j++) currSum += nums[j];
             maxSum = Math.max(maxSum, currSum);
         }
 
