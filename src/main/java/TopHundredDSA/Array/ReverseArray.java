@@ -18,7 +18,7 @@ public class ReverseArray {
 
     public static int[] reverseAnArrayBasedOngivenSize(int[] input, int k) {
 
-        for (int i=0; i < input.length; i+=3) {
+        for (int i=0; i < input.length; i+=k) {
              int left=i;
              int right=Math.min(i+k-1,input.length-1);
 
