@@ -1,4 +1,4 @@
-package TopHundredDSA.Array;
+package TopHundredDSA.Array.Easy;
 
 public class MaximumProductOFTriplet {
     static void main() {

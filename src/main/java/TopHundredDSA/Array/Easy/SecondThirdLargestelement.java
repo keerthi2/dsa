@@ -1,4 +1,4 @@
-package TopHundredDSA.Array;
+package TopHundredDSA.Array.Easy;
 
 public class SecondThirdLargestelement {
     //https://www.geeksforgeeks.org/dsa/find-second-largest-element-array/

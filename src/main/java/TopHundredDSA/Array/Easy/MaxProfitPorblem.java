@@ -1,4 +1,4 @@
-package TopHundredDSA.Array;
+package TopHundredDSA.Array.Easy;
 
 public class MaxProfitPorblem {
     int[] data= {1, 3, 6, 9, 11};
