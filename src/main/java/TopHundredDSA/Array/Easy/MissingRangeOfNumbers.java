@@ -34,8 +34,6 @@ public class MissingRangeOfNumbers {
             temp[1] = upper;
             list.add(temp);
         }
-
         return list;
-
     }
 }
