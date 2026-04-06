@@ -9,7 +9,7 @@ public class InsertMergeInterval {
        // int[] newInterval={5,6};
 
        int[][] arr= {{1, 2}, {3, 5}, {6, 7}, {8, 10}, {12, 16}};
-        int[] newInterval={4,9};
+       int[] newInterval={4,9};
         System.out.println(mergeInterval(arr,newInterval).toString());
 
     }
@@ -19,7 +19,7 @@ public class InsertMergeInterval {
         int i=0;
         int length=intervals.length;
         ArrayList<int[]> res=new ArrayList<>();
- // Store all the non overlapping elements firts
+ // Store all the non overlapping elements first
         while (i<length && intervals[i][1]<newInterval[0]){
             res.add(intervals[i]);
             i++;
