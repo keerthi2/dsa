@@ -28,4 +28,26 @@ public class ProductOfArrayExceptSelf {
        return  Arrays.stream(nums).map(x ->product/x).toArray();
     }
 
+    //Without using division function
+    public static int[] productOfArrayWithoutSelf(int[] input) {
+        int[] leftProduct = new int[input.length];
+        //1, 2, 3, 4
+        leftProduct[0] = 1;
+        for (int i = 1; i < input.length; i++) {
+            leftProduct[i] = leftProduct[i - 1] * input[i - 1];
+        }
+
+        int[] rightProduct = new int[input.length];
+        rightProduct[input.length - 1] = 1;
+        for (int j = input.length - 2; j >= 0; j--) {
+            rightProduct[j] = rightProduct[j + 1] * input[j + 1];
+        }
+        for (int i = 0; i < input.length; i++) {
+            input[i] = leftProduct[i] * rightProduct[i];
+        }
+        return input;
+    }
+
+
+
 }
